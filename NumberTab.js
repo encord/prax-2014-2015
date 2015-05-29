@@ -1,5 +1,5 @@
 /**
- *Funkcia hlavna má za úlohu zavolat v sebe generuj pole a tabulka
+ *Funkcia hlavna má za úlohu zavolat v sebe generuj pole a tabulka.
  *
  *Funkcia hlavna v sebe zavolá dalšie dve funkcie . Prvú generuj pole čím vygeneruje pole a druhú tabulka čím vytvorí tabulku. 
  */
@@ -10,12 +10,12 @@ function hlavna()
 }
 
 /**
- *Funkcia ma za ulohu vygenerovat nahodne cislo
+ *Funkcia má za úlohu vygenerovat náhodne číslo.
  *
- *Funkcia nahodne cisco pomocou dvoch parametrov vytvori nahodne cislo
- *@param{Number} min spodna hranica intervalu
- *@param{Number} max horna hranica intervalu
- *@return{Number} funkcia vracia nahodne cislo spomedz intervalu
+ *Funkcia náhodne číslo pomocou dvoch parametrov vytvorí náhodne číslo.
+ *@param{Number} min spodná hranica intervalu
+ *@param{Number} max horná hranica intervalu
+ *@return{Number} funkcia vracia náhodne číslo spomedzi intervalu
  */
 function nahodnecislo(min,max) 
 {
@@ -24,10 +24,10 @@ function nahodnecislo(min,max)
 	return cislo;
 }
 /**
- *Funkcia ma za ulohu vytvorit pole
+ *Funkcia ma za úlohu vytvoriť pole.
  *
- *Funkcia ma pomocou nahodných čísel vytvoriť pole
- *@param{Number} nah nahodne cislo
+ *Funkcia ma pomocou nahodných čísel vytvoriť pole.
+ *@param{Number} nah nahodné číslo
  *@return{Array<Number>} 
  */
 function vytvorpole(nah)  
@@ -43,9 +43,9 @@ function vytvorpole(nah)
 }
 
 /**
- *Funkcia ma za ulohu vygenerovať multidimenzionalne pole
+ *Funkcia ma za úlohu vygenerovať multidimenzionalne pole.
  *
- *Funkcia vytvorí multidimenzionalne pole pre ktore vieme určiť veľkost
+ *Funkcia vytvorí multidimenzionalne pole pre ktore vieme určiť veľkosť.
  *@return{Array<Array<Number>>}
  */
 function generujPole()  
@@ -63,10 +63,10 @@ function generujPole()
 }
 
 /**
- *Funkcia ma za ulohu vypis tabuky
+ *Funkcia ma za úlohu výpis tabuľky.
  *
- *Funkcia pomocou vytvorených fukcii vypísať tabulku na obrazovku
- *@param{Array<Array<Number>>} multipole mutidimenzionalne pole
+ *Funkcia pomocou vytvorených funkcii má vypísať tabuľku na obrazovku.
+ *@param{Array<Array<Number>>} multipole mutidimenzionálne pole
  */
 function tlacTabulku(multipole)  
 {        
@@ -94,13 +94,13 @@ function tlacTabulku(multipole)
 }
 
 /**
- *Funkcia ma za ulohu vypis jedneho riadka
+ *Funkcia ma za úlohu výpis jedného riadka.
  *
- *Funkcia pomocou vstupných parametrov vypíše jeden riadok
- *@param{<Array<Number>}  pole ktore obsahuje hodnoty ktore sa maju vypisat
- *@param{<Array<Number>} pole ktore obsahuje sirku riadkov
- *@param{Number} pozicia hodnout v tabulke
- *@param{Number} poziciaX pozicia celkoveho suctu riadka
+ *Funkcia pomocou vstupných parametrov vypíše jeden riadok.
+ *@param{<Array<Number>} pole ktoré obsahuje hodnoty ktoré sa majú vypísať
+ *@param{<Array<Number>} pole ktoré obsahuje šírku riadkov
+ *@param{Number} pozícia hodnôt v tabuľke
+ *@param{Number} poziciaX pozícia celkového súčtu riadka
  */
 function tlacRiadok(pole,sirkaStlpcov,pozicia,poziciaX)
 {
@@ -152,10 +152,10 @@ function tlacRiadok(pole,sirkaStlpcov,pozicia,poziciaX)
 } 
 
 /**
- *Funkcia ma za ulohu vypis jedneho riadka znakov
+ *Funkcia ma za úlohu výpis jedného riadka znakov.
  *
- *Funkcia pomocou vstupneho parametra vypíše jeden riadok znakov
- *@param{<Array<Number>}  sirkaStlpcov pole ktore obsahuje hodnoty sirky kazdeho stlpca
+ *Funkcia pomocou vstupného parametra vypíše jeden riadok znakov.
+ *@param{<Array<Number>} sirkaStlpcov pole ktoré obsahuje hodnoty šírky každého stĺpca
  */     
 function tlacZnaky(sirkaStlpcov)
 {
@@ -185,10 +185,10 @@ function tlacZnaky(sirkaStlpcov)
 } 
 
 /**
- *Funkcia ma za ulohu vypocitat sirku stlpca
+ *Funkcia ma za úlohu vypočitat širku stĺpca.
  *
- *Funkcia pomocou vstupneho parametra vypocita sirku kazdeho stlpca
- *@param{<Array<<Array<Number>>}  multipole pole ktore obsahuje hodnoty 
+ *Funkcia pomocou vstupného parametra vypočita širku kazdého stĺpca.
+ *@param{<Array<<Array<Number>>} multipole pole ktore obsahuje hodnoty 
  *@return{<Array<Number>} 
  */
 function sirkaStlpcov(multipole)
@@ -212,10 +212,10 @@ function sirkaStlpcov(multipole)
 }
 
 /**
- *Funkcia ma za ulohu tlacit hlavicku
+ *Funkcia ma za úlohu tlačit hlavičku.
  *
- *Funkcia pomocou vstupneho parametra vypise na obrazovku hlavicku 
- *@param{<Array<Number>}  sirkaStlpcov obsahuje vsetky sirky stlpcov
+ *Funkcia pomocou vstupného parametra vypíše na obrazovku hlavičku.
+ *@param{<Array<Number>} sirkaStlpcov obsahuje vsetky śirky stĺpcov
  */
 function tlacHlavicku(sirkaStlpcov)
 {
@@ -252,11 +252,11 @@ function tlacHlavicku(sirkaStlpcov)
 }
 
 /**
- *Funkcia ma za ulohu vypisat sucet stlpca
+ *Funkcia ma za úlohu vypísať súčet stľpca.
  *
- *Funkcia pomocou vstupnych parametrov vypise sucet kazdeho stlpca
- *@param{<Array<<Array<Number>>}  multipole pole ktore obsahuje hodnoty 
- *@param{<Array<Number>} sirkaStlpcov pole ktore obsahuje velkost sirkyStlpcov
+ *Funkcia pomocou vstupných parametrov vypíše súčet kazdeho stlpca.
+ *@param{<Array<<Array<Number>>} multipole pole ktoré obsahuje hodnoty 
+ *@param{<Array<Number>} sirkaStlpcov pole ktoré obsahuje veľkosť sirkyStlpcov
  */
 function tlacSucetStlpca(multipole,sirkaStlpcov)
 {
@@ -285,10 +285,10 @@ function tlacSucetStlpca(multipole,sirkaStlpcov)
 }
 
 /**
- *Funkcia ma za ulohu vypocitat sucet stlpca
+ *Funkcia ma za úlohu vypočitať súčet stĺpca.
  *
- *Funkcia pomocou vstupnych parametrov vypocita sucet kazdeho stlpca
- *@param{<Array<<Array<Number>>}  multipole pole ktore obsahuje hodnoty 
+ *Funkcia pomocou vstupných parametrov vypočíta súcet každého stĺpca.
+ *@param{<Array<<Array<Number>>} multipole pole ktoré obsahuje hodnoty 
  *@return{<Array<Number>} sv
  */
 function suctyStlpcov(multipole)
@@ -308,10 +308,10 @@ function suctyStlpcov(multipole)
 }
 
 /**
- *Funkcia ma za ulohu vypocitat sucet riadka
+ *Funkcia ma za úlohu vypočítať súčet riadka.
  *
- *Funkcia pomocou vstupnych parametrov vypodita sucet kazdeho riadka
- *@param{<Array<<Array<Number>>}  multipole pole ktore obsahuje hodnoty 
+ *Funkcia pomocou vstupných parametrov vypočíta súčet každého riadka.
+ *@param{<Array<<Array<Number>>} multipole pole ktore obsahuje hodnoty 
  *@return{<Array<Number>} 
  */
 function suctyRiadkov(multipole)
@@ -332,10 +332,10 @@ function suctyRiadkov(multipole)
  }
 
 /**
- *Funkcia ma za ulohu vypocitat celkovy sucet hodnot
+ *Funkcia ma za úlohu vypočítať celkový súčet hodnôt.
  *
- *Funkcia pomocou vstupnych parametrov vypodita sucet vsetkych hodnot
- *@param{<Array<<Array<Number>>}  multipole pole ktore obsahuje hodnoty 
+ *Funkcia pomocou vstupných parametrov vypočíta súčet všetkých hodnôt.
+ *@param{<Array<<Array<Number>>} multipole pole ktoré obsahuje hodnoty 
  *@return{<Array<Number>} 
  */
 function celkovySucet(multipole)
