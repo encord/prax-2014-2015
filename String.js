@@ -34,6 +34,7 @@ function mix(s1,s2)
 	var par = 0 ;
 	var nepar = 0;
 	var pocet = s1.length + s2.length;
+
 	for(var i = 0; i < pocet ; i++)
 	{
 		if(i%2 === 0)
